@@ -210,9 +210,9 @@ bar-volume-empty-foreground = ${colors.foreground}
 type = internal/battery
 battery = BAT0
 adapter = ADP1
-full-at = 98
+full-at = 99
 
-format-charging = [<animation-charging>  <label-charging>]
+format-charging = [<animation-charging>  %percentage%%]
 format-charging-underline = #ffb52a
 format-charging-padding = 2
 
@@ -221,7 +221,6 @@ format-discharging-underline = ${self.format-charging-underline}
 format-discharging-padding = 2
 
 format-full = "[  <label-full>]"
-label-full = %percentage%%
 format-full-padding = 2
 
 ramp-capacity-0 = 
