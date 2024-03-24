@@ -134,7 +134,7 @@ format-connected = [  <label-connected>]
 label-connected = %essid%
 format-connected-padding = 2
 
-format-disconnected = [睊 no wifi]
+format-disconnected = [󰖪  no wifi]
 format-disconnected-padding = 2
 ;format-disconnected = <label-disconnected>
 ;format-disconnected-underline = ${self.format-connected-underline}
@@ -181,11 +181,11 @@ label = %date% %time%
 type = internal/pulseaudio
 
 format-volume = <label-volume>
-label-volume = [墳 %percentage%%]
+label-volume = [  %percentage%%]
 label-volume-foreground = ${root.foreground}
 format-volume-padding = 2
 
-label-muted = [婢 %percentage%%]
+label-muted = [󰖁  %percentage%%]
 label-muted-foreground = ${root.foreground}
 format-muted-padding = 2
 
@@ -255,7 +255,7 @@ format-padding = 2
 
 label-open = ⏻
 label-open-foreground = ${colors.foreground}
-label-close = [ﰸ  cancel]
+label-close = [󰜺  cancel]
 label-close-foreground = ${colors.foreground}
 label-separator = " "
 label-separator-foreground = ${colors.foreground}

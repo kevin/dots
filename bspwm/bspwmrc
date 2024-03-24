@@ -27,14 +27,15 @@ bspc rule -a Screenkey manage=off
 
 # wallpaper
 # paperview ~/dots/wallpaper/ 1 & # doesnt work with picom
-feh --bg-scale ~/dots/wallpapers/arseniy-chebynkin-school-roof-sunset-no-watermark.jpg
+feh --bg-scale ~/dots/wallpapers/arseniy-chebynkin-modern-metropolis-no-watermark.jpg
 
 # picom
 killall picom
 while pgrep -u $UID -x picom >/dev/null; do sleep 1; done
 picom -f -D 3 &
 
-fc-cache -fv &
+# fc-cache -fv &
+fc-cache -fv
 
 # polybar
 killall -q polybar
