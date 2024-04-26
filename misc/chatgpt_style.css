@@ -1,0 +1,128 @@
+/* custom css for chatgpt website */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    color: var(--white);
+    --background: #000000;
+    --black: #060606;
+    --red: #ed4747;
+    --green: #C2D94C;
+    --yellow: #FF9940;
+    --blue: #54e0f0;
+    --magenta: #d46ef0;
+    --cyan: #54f0c1;
+    --white: #dfdfdf;
+
+    --bright-black: #686868;
+    --bright-red: #ff5e87;
+    --bright-green: #C2D94C;
+    --bright-yellow: #FF9940;
+    --bright-blue: #54e0f0;
+    --bright-magenta: #d46ef0;
+    --bright-cyan: #54f0c1;
+    --bright-white: #FFFFFF;
+}
+
+.dark {
+    --text-primary: var(--white);
+    --text-secondary: var(--white);
+    --text-tertiary: var(--bright-black);
+    --text-quaternary: var(--bright-black);
+    --text-error: var(--red);
+    --border-light: var(--bright-black);
+    --border-medium: var(--bright-black);
+    --main-surface-primary: var(--background);
+    --main-surface-secondary: var(--black);
+    --main-surface-tertiary: var(--black);
+    --sidebar-surface-primary: var(--black);
+    --sidebar-surface-secondary: var(--black);
+    --sidebar-surface-tertiary: var(--black);
+    --link: #7ab7ff;
+    --link-hover: #5e83b3;
+
+}
+
+/* greyed out text */
+.text-message.text-token-text-tertiary {
+    color: var(--text-tertiary);
+    filter: brightness(150%);
+}
+
+/* various other parts of dark theme that need to be specified */
+.dark
+.dark\:bg-gray-700 {
+    --tw-bg-opacity: 1;
+    background-color: var(--black);
+}
+
+
+.dark
+.dark\:text-white {
+    --tw-text-opacity: 1;
+    color: var(--white);
+}
+
+.dark\:hover\:bg-white\/10:hover:is(.dark *) {
+        background-color: var(--black);
+    filter: brightness(150%);
+}
+
+.dark\:md\:hover\:bg-gray-700:hover:is(.dark *) {
+    --tw-bg-opacity: 1;
+    background-color: var(--black);
+    filter: brightness(150%);
+}
+
+.flex > span {
+    color: var(--white);
+}
+
+/* placeholder text in chat */
+#prompt-textarea::placeholder {
+  color: var(--text-tertiary);
+  opacity: 1;
+}
+
+/* font */
+
+:host, html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-feature-settings: normal;
+    font-feature-settings: normal;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 95%;
+    font-family: "Space Mono", monospace, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    line-height: 1.5;
+    tab-size: 4;
+}
+
+/* change pfp's to terminal-like names */
+div.font-semibold.select-none {
+    visibility: hidden;
+}
+div.font-semibold.select-none::after {
+    content: "[user]";
+    visibility: visible;
+    text-indent: 0;
+    line-height: initial;
+    display: block;
+    position: absolute;
+    margin-left: -5em;
+}
+
+.agent-turn > div.font-semibold.select-none::after {
+    content: "[system]";
+    margin-left: -6.25em;
+}
+
+/* hide pfp images in chat */
+.flex.gizmo-shadow-stroke.h-6 {
+    display: none;
+}
+.flex.gizmo-bot-avatar {
+    display: none;
+}
