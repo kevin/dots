@@ -91,7 +91,7 @@
     -webkit-font-feature-settings: normal;
     font-feature-settings: normal;
     -webkit-tap-highlight-color: transparent;
-    font-size: 95%;
+    font-size: 94%;
     font-family: "Space Mono", monospace, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     font-optical-sizing: auto;
     font-weight: 200;
@@ -125,4 +125,9 @@ div.font-semibold.select-none::after {
 }
 .flex.gizmo-bot-avatar {
     display: none;
+}
+
+/* fix numbers getting cut off on the left in response */
+ol > li {
+    margin-left: 2px;
 }
