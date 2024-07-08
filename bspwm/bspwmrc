@@ -25,6 +25,10 @@ bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
+# font
+# fc-cache -fv &
+fc-cache -fv
+
 # wallpaper
 # paperview ~/dots/wallpaper/ 1 & # doesnt work with picom
 feh --bg-scale ~/dots/wallpapers/arseniy-chebynkin-modern-metropolis-no-watermark.jpg
@@ -33,9 +37,6 @@ feh --bg-scale ~/dots/wallpapers/arseniy-chebynkin-modern-metropolis-no-watermar
 killall picom
 while pgrep -u $UID -x picom >/dev/null; do sleep 1; done
 picom -f -D 3 &
-
-# fc-cache -fv &
-fc-cache -fv
 
 # polybar
 killall -q polybar
