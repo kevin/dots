@@ -31,7 +31,8 @@ fc-cache -fv
 
 # wallpaper
 # paperview ~/dots/wallpaper/ 1 & # doesnt work with picom
-feh --bg-scale ~/dots/wallpapers/arseniy-chebynkin-modern-metropolis-no-watermark.jpg
+# feh --bg-scale ~/dots/wallpapers/arseniy-chebynkin-modern-metropolis-no-watermark.jpg
+feh --bg-scale ~/Downloads/3.png
 
 # picom
 killall picom
